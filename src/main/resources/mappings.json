@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "apache_spark_cluster_master_url": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:cluster_master_url",
+      "cloudfoundry:$['spark'][0].credentials.cluster_master_url",
+      "env:service_apache_spark:$.cluster_master_url",
+      "env:apache_spark_cluster_master_url",
+      "file:/server/localdev-config.json:$.apache_spark_cluster_master_url"
+    ]
+  },
+  "apache_spark": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided:java-ms-spring-apachespark-1559530812654:tenant_secret",
+        "cloudfoundry:apache_spark",
+        "env:apache_spark_credentials",
+        "file:/server/localdev-config.json:apache_spark_credentials"
+      ]
+    }
+  },
+  "apache_spark_instance_id": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:instance_id",
+      "cloudfoundry:$['spark'][0].credentials.instance_id",
+      "env:service_apache_spark:$.instance_id",
+      "env:apache_spark_instance_id",
+      "file:/server/localdev-config.json:$.apache_spark_instance_id"
+    ]
+  },
+  "apache_spark_plan": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:plan",
+      "cloudfoundry:$['spark'][0].credentials.plan",
+      "env:service_apache_spark:$.plan",
+      "env:apache_spark_plan",
+      "file:/server/localdev-config.json:$.apache_spark_plan"
+    ]
+  },
+  "apache_spark_tenant_id": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:tenant_id",
+      "cloudfoundry:$['spark'][0].credentials.tenant_id",
+      "env:service_apache_spark:$.tenant_id",
+      "env:apache_spark_tenant_id",
+      "file:/server/localdev-config.json:$.apache_spark_tenant_id"
+    ]
+  },
+  "apache_spark_tenant_id_full": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:tenant_id_full",
+      "cloudfoundry:$['spark'][0].credentials.tenant_id_full",
+      "env:service_apache_spark:$.tenant_id_full",
+      "env:apache_spark_tenant_id_full",
+      "file:/server/localdev-config.json:$.apache_spark_tenant_id_full"
+    ]
+  },
+  "apache_spark_tenant_secret": {
+    "searchPatterns": [
+      "user-provided:java-ms-spring-apachespark-1559530812654:tenant_secret",
+      "cloudfoundry:$['spark'][0].credentials.tenant_secret",
+      "env:service_apache_spark:$.tenant_secret",
+      "env:apache_spark_tenant_secret",
+      "file:/server/localdev-config.json:$.apache_spark_tenant_secret"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: JavaMSSpring
+  buildpack: java_buildpack
+  path: ./target/JavaMSSpring-1.0-SNAPSHOT.jar
+  memory: 1024M
+  domain: mybluemix.net
+  host: java-ms-spring
+  services:
+    - java-ms-spring-apachespark-1559530812654
+    - java-ms-spring-iotplatform-1559531011714
